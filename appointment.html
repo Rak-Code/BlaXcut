@@ -134,6 +134,8 @@
         <div class="rating">Rating: 4.5</div>
 
         <div class="location"><i class="fa-solid fa-location-dot icon"></i>123 Main Street, Santacruz</div>
+        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+
       </div>
     </div>
 
@@ -145,6 +147,8 @@
         <div class="shop-name">Chic Hair Studio</div>
         <div class="rating">Rating: 4.8</div>
         <div class="location"><i class="fa-solid fa-location-dot icon"></i>456 Oak Avenue, Churchgate</div>
+        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+
       </div>
     </div>
 
@@ -155,12 +159,17 @@
         <div class="shop-name">Spicky Mens Salon</div>
         <div class="rating">Rating: 4.6</div>
         <div class="location"><i class="fa-solid fa-location-dot icon"></i>Linking Road, Bandra</div>
+        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+
       </div>
     </div>
   </div>
 
   <script>
     // You can add JavaScript code here for any dynamic behavior if needed
+    function openInNewTab(url) {
+        window.open(url, '_blank');
+    }
   </script>
 
 </body>

@@ -57,3 +57,17 @@ body{
      justify-content: center;
      
 }
+
+.button {
+    background-color: var(--indian-yellow);
+    color: #fff;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    
+    align-self: center;
+}
