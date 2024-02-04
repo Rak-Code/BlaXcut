@@ -42,21 +42,22 @@
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
-    .appbg{
-    background-color: #0D0D0D;
-    margin-top: 0px;
-  }
-  header {
-  margin: 0;
-  padding: 0;
-}
-.header-bottom{
-    margin-top: -3.1%;
-}
-#top{
-    margin: 0%;
-}
+    .appbg {
+      background-color: #0D0D0D;
+      margin-top: 0px;
+    }
+
+    .header-bottom {
+      margin-top: -3.1%;
+    }
+
+    
   </style>
 
 </head>
@@ -67,9 +68,9 @@
     - #HEADER
   -->
 
-  <header style="margin-top:100px ;" class="header  bg" >
+  <header style="margin-top:100px ;" class="header  bg">
 
-    
+
 
     <div class="header-bottom appbg" data-header>
       <div class="container">
@@ -123,30 +124,34 @@
     </div>
 
   </header>
-<br>
-<h1>Popular Salons in Mumbai</h1>
-<br>
+  <br>
+  <h1 class="align">Popular Salons in Mumbai</h1>
+  <div class="flex-card">
+
+    <div class="card">
+      <img src="https://placekitten.com/300/150" alt="Salon Image">
+      <div class="card-content">
+        <div class="shop-name">Glamour Salon</div>
+        <div class="rating">Rating: 4.5</div>
+        
+        <div class="location"><i class="fa-solid fa-location-dot icon" ></i>123 Main Street, Cityville</div>
+      </div>
+    </div>
+
   <div class="card">
     <img src="https://placekitten.com/300/150" alt="Salon Image">
     <div class="card-content">
-        <div class="shop-name">Glamour Salon</div>
-        <div class="rating">4.5</div>
-        <div class="location">123 Main Street, Cityville</div>
+      <div class="shop-name">Chic Hair Studio</div>
+      <div class="rating">Rating: 4.8</div>
+      <div class="location"><i class="fa-solid fa-location-dot icon" ></i>456 Oak Avenue, Townsville</div>
     </div>
+  </div>
 </div>
 
-<div class="card">
-    <img src="https://placekitten.com/300/150" alt="Salon Image">
-    <div class="card-content">
-        <div class="shop-name">Chic Hair Studio</div>
-        <div class="rating">4.8</div>
-        <div class="location">456 Oak Avenue, Townsville</div>
-    </div>
-</div>
-
-<script>
+  <script>
     // You can add JavaScript code here for any dynamic behavior if needed
-</script>
+  </script>
 
 </body>
+
 </html>
