@@ -8,5 +8,9 @@
 }
 
 .card-price{
-    font-size: larger;
+    font-size: 20px;
+}
+
+.th-col{
+    color: hsl(36, 61%, 58%);
 }
