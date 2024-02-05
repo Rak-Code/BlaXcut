@@ -7,8 +7,8 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-body{
-    /* background: linear-gradient(#b8abea,#907cd4,#6c4be2); */
+.loginbody{
+    /* background: linear-gradient(#b8abea,#907cd4,#6c4be2); **/
     background: url("images/99.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -16,11 +16,12 @@ body{
     background-attachment: fixed;
     padding: 20px;
 }
-.container{
+
+.container-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: -43px;
     min-height: 90vh;
 
 }
@@ -124,16 +125,17 @@ body{
     text-align: center;
     font-size: 13px;
     font-weight: 500;
-    margin-top: 40px;
+    margin-top: -13px;
 }
 .forgot a{
     text-decoration: none;
     color: #000;
+    padding: 10px;
 }
 .switch{
     display: flex;
     position: absolute;
-    bottom: 50px;
+    bottom: 6px;
     left: 25px;
     width: 85%;
     height: 50px;
