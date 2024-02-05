@@ -1,0 +1,12 @@
+.service {
+    text-align: center;
+    margin-top: -100px;
+}
+
+#services > div > p{
+    margin-bottom: 10px;
+}
+
+.card-price{
+    font-size: larger;
+}
