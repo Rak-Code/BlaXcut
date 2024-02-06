@@ -13,6 +13,7 @@
   <meta name="title" content="Barber - Barbers & Hair Cutting">
   <meta name="description" content="This is a barber html template made by codewithsadee">
   <link rel="stylesheet" href="assets/css/appointment.css">
+  <link rel="stylesheet" href="assets/css/service.css">
 
   <!-- 
     - favicon
@@ -56,6 +57,11 @@
     .header-bottom {
       margin-top: -3.1%;
     }
+
+    #appointment > div > div{
+        border-radius: 50px;
+
+    }
   </style>
 
 </head>
@@ -93,10 +99,7 @@
               <a href="feature.html" class="navbar-link">AI Feature</a>
             </li>
 
-            <!--<li class="navbar-item">
-              <a href="#gallery" class="navbar-link" >Gallery</a>
-            </li>
-          -->
+            
             <li class="navbar-item">
               <a href="appointment.html" class="navbar-link">BookNow</a>
             </li>
@@ -123,55 +126,74 @@
 
   </header>
   <br>
-  <h1 class="align">Popular Salons in Mumbai</h1>
-  <div class="flex-card">
 
-    <div class="card">
-      <img src="https://5.imimg.com/data5/ANDROID/Default/2023/8/330864406/IW/FG/VF/48165331/product-jpeg-500x500.jpg"
-        alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">Glamour Salon</div>
-        <div class="rating">Rating: 4.5</div>
+  <!-- 
+        - #APPOINTMENT
+      -->
 
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>123 Main Street, Santacruz</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+      <section class="section appoin" id="appointment" aria-label="appointment">
+        <div class="container">
 
-      </div>
-    </div>
+          <div class="appoin-card">
 
-    <div class="card">
-      <img
-        src="https://content.jdmagicbox.com/comp/visakhapatnam/i7/0891px891.x891.180908124223.s7i7/catalogue/raju-salon-shop-visakhapatnam-qepgwhh2zo.jpg"
-        alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">Chic Hair Studio</div>
-        <div class="rating">Rating: 4.8</div>
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>456 Oak Avenue, Churchgate</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+              <img src="./assets/images/appoin-banner-1.jpg" width="250" height="774" loading="lazy" alt=""
+                class="img-cover">
+            </figure>
 
-      </div>
-    </div>
+            <div class="card-content">
 
+              <h2 class="h2 section-title">Contact Us</h2>
 
-    <div class="card">
-      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">Spicky Mens Salon</div>
-        <div class="rating">Rating: 4.6</div>
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Linking Road, Bandra</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+              <p class="section-text">
+                "We'd love to hear from you! Reach out to us for any inquiries, appointments, or feedback. Your satisfaction is our priority."
+              </p>
 
-      </div>
-    </div>
-  </div>
+              <form action="" class="appoin-form">
 
-  <script>
-    // You can add JavaScript code here for any dynamic behavior if needed
-    function openInNewTab(url) {
-        window.open(url, '_blank');
-    }
-  </script>
+                <div class="input-wrapper">
+                  <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
 
-</body>
+                  <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+                </div>
 
-</html>
+                <div class="input-wrapper">
+                  <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+
+                  <select name="category" class="input-field">
+
+                    <option value="Select category">Select category</option>
+                    <option value="Beauty & spa">Beauty & spa</option>
+                    <option value="Body massage">Body massage</option>
+                    <option value="Shaving & Facial">Shaving & Facial</option>
+                    <option value="Hair Color">Hair Color</option>
+
+                  </select>
+                </div>
+
+                <!--<input type="date" name="date" required class="input-field date"> -->
+
+                <textarea name="message" rows="20" cols="10" placeholder="Write Message" required class="input-field"></textarea>
+
+                <button type="submit" class="form-btn">
+                  <span class="span">Send Message</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </form>
+
+            </div>
+
+            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+              <img src="./assets/images/appoin-banner-2.jpg" width="250" height="774" loading="lazy" alt=""
+                class="img-cover">
+            </figure>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
