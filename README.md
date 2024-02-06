@@ -2,7 +2,7 @@
 
 # SalonX - Barbers & Hair Cutting
 
-This is a HTML template for a barber website created by codewithsadee.
+https://rak-code.github.io/SALONX/
 
 ## Description
 
