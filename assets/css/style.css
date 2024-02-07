@@ -13,7 +13,7 @@
 
 
 /*-----------------------------------*\
-  #CUSTOM PROPERTY
+  #CUSTOM PROPERTY   hsl(36, 61%, 58%);
 \*-----------------------------------*/
 
 :root {
@@ -25,7 +25,7 @@
   --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
   --rich-black-fogra-39: hsl(0, 0%, 5%);
   --indian-yellow_10: hsla(36, 61%, 58%, 0.1);
-  --indian-yellow: hsl(36, 61%, 58%);
+  --indian-yellow: hsl(40, 65%, 60%);
   --harvest-gold: hsl(36, 66%, 53%);
   --eerie-black-1: hsl(0, 0%, 14%);
   --eerie-black-2: hsl(0, 0%, 12%);
@@ -196,6 +196,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 0.96;
+  
 }
 
 .h1,
