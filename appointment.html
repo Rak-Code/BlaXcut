@@ -55,7 +55,10 @@
 
     .header-bottom {
       margin-top: -3.1%;
+      position: fixed;
     }
+
+
   </style>
 
 </head>
@@ -66,7 +69,7 @@
     - #HEADER
   -->
 
-  <header style="margin-top:100px ;" class="header  bg">
+  <header style="margin-top:100px ;" class="header  bg fixed">
 
 
 
@@ -74,7 +77,7 @@
       <div class="container">
 
         <a href="#" class="logo">
-          SalonX
+          Bla<span class="X">X</span>cut
           <span class="span">Hair Salon</span>
         </a>
 
@@ -82,15 +85,15 @@
           <ul class="navbar-list">
 
             <li class="navbar-item">
-              <a href="index.html" class="navbar-link">Home</a>
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
             </li>
 
             <li class="navbar-item">
-              <a href="services.html" class="navbar-link">Services</a>
+              <a href="services.html" class="navbar-link" data-nav-link>Services</a>
             </li>
 
             <li class="navbar-item">
-              <a href="feature.html" class="navbar-link">AI Feature</a>
+              <a href="feature.html" class="navbar-link" data-nav-link>AI Feature</a>
             </li>
 
             <!--<li class="navbar-item">
@@ -98,11 +101,11 @@
             </li>
           -->
             <li class="navbar-item">
-              <a href="appointment.html" class="navbar-link">BookNow</a>
+              <a href="appointment.html" class="navbar-link" data-nav-link>BookNow</a>
             </li>
 
             <li class="navbar-item">
-              <a href="contact.html" class="navbar-link">Contact Us</a>
+              <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
             </li>
 
           </ul>
@@ -123,6 +126,7 @@
 
   </header>
   <br>
+  <br>
   <h1 class="align">Popular Salons in Mumbai</h1>
   <div class="flex-card">
 
@@ -134,7 +138,7 @@
         <div class="rating">Rating: 4.5</div>
 
         <div class="location"><i class="fa-solid fa-location-dot icon"></i>123 Main Street, Santacruz</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
 
       </div>
     </div>
@@ -147,7 +151,7 @@
         <div class="shop-name">Chic Hair Studio</div>
         <div class="rating">Rating: 4.8</div>
         <div class="location"><i class="fa-solid fa-location-dot icon"></i>456 Oak Avenue, Churchgate</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
 
       </div>
     </div>
@@ -159,11 +163,269 @@
         <div class="shop-name">Spicky Mens Salon</div>
         <div class="rating">Rating: 4.6</div>
         <div class="location"><i class="fa-solid fa-location-dot icon"></i>Linking Road, Bandra</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Visit Shop</button>
+        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
 
       </div>
     </div>
+
+    <div class="card">
+      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
+      <div class="card-content">
+        <div class="shop-name">SalonX</div>
+        <div class="rating">Rating: 4.8</div>
+        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Jio World, BKC</div>
+        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
+      <div class="card-content">
+        <div class="shop-name">BlackHair</div>
+        <div class="rating">Rating: 4.2</div>
+        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Xavier Col., Marines Lines</div>
+        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
+      <div class="card-content">
+        <div class="shop-name">la Scioors</div>
+        <div class="rating">Rating: 4.4</div>
+        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Hill Road, Mahim</div>
+        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
+
+      </div>
+    </div>
+
   </div>
+
+  <br>
+  <br>
+  
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            Barber
+            <span class="span">Hair Salon</span>
+          </a>
+
+          <form action="" class="input-wrapper">
+
+            <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Meet Our Team</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Our Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Need A Career?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">News & Blog</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Hair Cutting</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Shaving & Design</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Hair Colors</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Beauty & Spa</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Body Massages</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Recent News</p>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-1.jpg" width="70" height="75" loading="lazy"
+                    alt="The beginners guide to Henna Brows in Brisbane" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">The beginners guide to Transform your Look.</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2022-08-25">05 Feburary 2024</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-2.jpg" width="70" height="75" loading="lazy"
+                    alt="How do I get rid of unwanted hair on my face?" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">How do I get rid of unwanted hair on my face?</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2024-02-05">05 Feburary 2024</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="contact-link">
+                Teachers Colony.Khar Road,Mumbai
+              </address>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+0123456789" class="contact-link">+91 7715820600</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:support@gmail.com" class="contact-link">rakeshgupta1361411@gmail.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">Rak-Code</a>. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
 
   <script>
     // You can add JavaScript code here for any dynamic behavior if needed

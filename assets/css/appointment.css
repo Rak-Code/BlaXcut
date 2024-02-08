@@ -47,14 +47,17 @@ body{
 }
 .align{
     text-align: center;
-    color: hsl(0, 0%, 14%);
+    
     font-size: var(--fs-30);
-    font-style: uppercase;
+    text-transform: uppercase;
 }
 
 .flex-card{
      display: flex;
      justify-content: center;
+     flex-wrap: wrap;
+     align-content: center;
+     gap: 20px;
      
 }
 
@@ -71,3 +74,4 @@ body{
     
     align-self: center;
 }
+
