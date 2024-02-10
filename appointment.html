@@ -1,439 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
+    <!-- 
     - primary meta tags
   -->
-  <title>Barber - Barbers & Hair Cutting</title>
-  <meta name="title" content="Barber - Barbers & Hair Cutting">
-  <meta name="description" content="This is a barber html template made by codewithsadee">
-  <link rel="stylesheet" href="assets/css/appointment.css">
+    <title>Barber - Barbers & Hair Cutting</title>
+    <meta name="title" content="Barber - Barbers & Hair Cutting" />
+    <meta
+      name="description"
+      content="This is a barber html template made by codewithsadee"
+    />
+    <link rel="stylesheet" href="assets/css/appointment.css" />
 
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- 
+    <!-- 
     - flaticon
   -->
-  <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.min.css" />
 
-  <!-- 
+    <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <style>
-    .appbg {
-      background-color: #0D0D0D;
-      margin-top: 0px;
-    }
+    <style>
+      .appbg {
+        background-color: #0d0d0d;
+        margin-top: 0px;
+      }
 
-    .header-bottom {
-      margin-top: -3.1%;
-      position: fixed;
-    }
+      .header-bottom {
+        margin-top: -3.1%;
+        position: fixed;
+      }
+    </style>
+  </head>
 
-
-  </style>
-
-</head>
-
-<body id="top">
-
-  <!-- 
+  <body id="top">
+    <!-- 
     - #HEADER
   -->
 
-  <header style="margin-top:100px ;" class="header  bg fixed">
-
-
-
-    <div class="header-bottom appbg" data-header>
-      <div class="container">
-
-        <a href="#" class="logo">
-          Bla<span class="X">X</span>cut
-          <span class="span">Hair Salon</span>
-        </a>
-
-        <nav class="navbar container" data-navbar>
-          <ul class="navbar-list">
-
-            <li class="navbar-item">
-              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="services.html" class="navbar-link" data-nav-link>Services</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="feature.html" class="navbar-link" data-nav-link>AI Feature</a>
-            </li>
-
-            <!--<li class="navbar-item">
-              <a href="#gallery" class="navbar-link" >Gallery</a>
-            </li>
-          -->
-            <li class="navbar-item">
-              <a href="appointment.html" class="navbar-link" data-nav-link>BookNow</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
-            </li>
-
-          </ul>
-        </nav>
-
-        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <a href="login.html" class="btn has-before">
-          <span class="span">Login/Register</span>
-
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a>
-
-      </div>
-    </div>
-
-  </header>
-  <br>
-  <br>
-  <h1 class="align">Popular Salons in Mumbai</h1>
-  <div class="flex-card">
-
-    <div class="card">
-      <img src="https://5.imimg.com/data5/ANDROID/Default/2023/8/330864406/IW/FG/VF/48165331/product-jpeg-500x500.jpg"
-        alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">Glamour Salon</div>
-        <div class="rating">Rating: 4.5</div>
-
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>123 Main Street, Santacruz</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
-
-      </div>
-    </div>
-
-    <div class="card">
-      <img
-        src="https://content.jdmagicbox.com/comp/visakhapatnam/i7/0891px891.x891.180908124223.s7i7/catalogue/raju-salon-shop-visakhapatnam-qepgwhh2zo.jpg"
-        alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">Chic Hair Studio</div>
-        <div class="rating">Rating: 4.8</div>
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>456 Oak Avenue, Churchgate</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
-
-      </div>
-    </div>
-
-
-    <div class="card">
-      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">Spicky Mens Salon</div>
-        <div class="rating">Rating: 4.6</div>
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Linking Road, Bandra</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
-
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">SalonX</div>
-        <div class="rating">Rating: 4.8</div>
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Jio World, BKC</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
-
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">BlackHair</div>
-        <div class="rating">Rating: 4.2</div>
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Xavier Col., Marines Lines</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
-
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg" alt="Salon Image">
-      <div class="card-content">
-        <div class="shop-name">la Scioors</div>
-        <div class="rating">Rating: 4.4</div>
-        <div class="location"><i class="fa-solid fa-location-dot icon"></i>Hill Road, Mahim</div>
-        <button class="button" onclick="openInNewTab('https://example.com')">Book Now</button>
-
-      </div>
-    </div>
-
-  </div>
-
-  <br>
-  <br>
-  
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
-    <div class="container">
-
-      <div class="footer-top">
-
-        <div class="footer-brand">
-
+    <header style="margin-top: 100px" class="header bg fixed">
+      <div class="header-bottom appbg" data-header>
+        <div class="container">
           <a href="#" class="logo">
-            Barber
+            Bla<span class="X">X</span>cut
             <span class="span">Hair Salon</span>
           </a>
 
-          <form action="" class="input-wrapper">
+          <nav class="navbar container" data-navbar>
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
 
-            <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
+              <li class="navbar-item">
+                <a href="services.html" class="navbar-link" data-nav-link
+                  >Services</a
+                >
+              </li>
 
-            <button type="submit" class="btn has-before">
-              <span class="span">Subscribe Now</span>
+              <li class="navbar-item">
+                <a href="feature.html" class="navbar-link" data-nav-link
+                  >AI Feature</a
+                >
+              </li>
 
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </button>
+              <!--<li class="navbar-item">
+              <a href="#gallery" class="navbar-link" >Gallery</a>
+            </li>
+          -->
+              <li class="navbar-item">
+                <a href="appointment.html" class="navbar-link" data-nav-link
+                  >BookNow</a
+                >
+              </li>
 
-          </form>
+              <li class="navbar-item">
+                <a href="contact.html" class="navbar-link" data-nav-link
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
 
+          <button
+            class="nav-toggle-btn"
+            aria-label="toggle menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="login.html" class="btn has-before">
+            <span class="span">Login/Register</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
         </div>
+      </div>
+    </header>
+    <br />
+    <br />
+    <h1 class="align">Popular Salons in Mumbai</h1>
+    <div class="flex-card">
+      <div class="card">
+        <img
+          src="https://5.imimg.com/data5/ANDROID/Default/2023/8/330864406/IW/FG/VF/48165331/product-jpeg-500x500.jpg"
+          alt="Salon Image"
+        />
+        <div class="card-content">
+          <div class="shop-name">Glamour Salon</div>
+          <div class="rating">Rating: 4.5</div>
 
-        <div class="footer-link-box">
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Quick Links</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Our Services</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Meet Our Team</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Our Portfolio</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Need A Career?</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">News & Blog</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Services</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Hair Cutting</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Shaving & Design</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Hair Colors</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Beauty & Spa</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Body Massages</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Recent News</p>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
-                  <img src="./assets/images/footer-blog-1.jpg" width="70" height="75" loading="lazy"
-                    alt="The beginners guide to Henna Brows in Brisbane" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3>
-                    <a href="#" class="card-title">The beginners guide to Transform your Look.</a>
-                  </h3>
-
-                  <div class="card-date">
-                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                    <time datetime="2022-08-25">05 Feburary 2024</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
-                  <img src="./assets/images/footer-blog-2.jpg" width="70" height="75" loading="lazy"
-                    alt="How do I get rid of unwanted hair on my face?" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3>
-                    <a href="#" class="card-title">How do I get rid of unwanted hair on my face?</a>
-                  </h3>
-
-                  <div class="card-date">
-                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                    <time datetime="2024-02-05">05 Feburary 2024</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Contact Us</p>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
-              <address class="contact-link">
-                Teachers Colony.Khar Road,Mumbai
-              </address>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-              <a href="tel:+0123456789" class="contact-link">+91 7715820600</a>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-              <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <a href="mailto:support@gmail.com" class="contact-link">rakeshgupta1361411@gmail.com</a>
-            </li>
-
-          </ul>
-
+          <div class="location">
+            <i class="fa-solid fa-location-dot icon"></i>123 Main Street,
+            Santacruz
+          </div>
+          <button class="button" onclick="openInNewTab('https://example.com')">
+            Book Now
+          </button>
         </div>
+      </div>
+      <!--Card2-->
+      <div class="card">
+        <img
+          src="https://content.jdmagicbox.com/comp/visakhapatnam/i7/0891px891.x891.180908124223.s7i7/catalogue/raju-salon-shop-visakhapatnam-qepgwhh2zo.jpg"
+          alt="Salon Image"
+        />
+        <div class="card-content">
+          <div class="shop-name">Chic Hair Studio</div>
+          <div class="rating">Rating: 4.8</div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot icon"></i>456 Oak Avenue,
+            Churchgate
+          </div>
+          <button class="button" onclick="openInNewTab('https://example.com')">
+            Book Now
+          </button>
+        </div>
+      </div>
+      <!--Card2-->
 
+      <div class="card">
+        <img
+          src="https://5.imimg.com/data5/SELLER/Default/2021/11/ZA/BP/LA/54464302/saloon-shop-interior-designing-500x500.jpg"
+          alt="Salon Image"
+        />
+        <div class="card-content">
+          <div class="shop-name">Spicky Mens Salon</div>
+          <div class="rating">Rating: 4.6</div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot icon"></i>Linking Road, Bandra
+          </div>
+          <button class="button" onclick="openInNewTab('https://example.com')">
+            Book Now
+          </button>
+        </div>
       </div>
 
-      <div class="footer-bottom">
-        <p class="copyright">
-          &copy; 2024 <a href="#" class="copyright-link">Rak-Code</a>. All Rights Reserved.
-        </p>
+      <div class="card">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Salon Image"
+        />
+        <div class="card-content">
+          <div class="shop-name">SalonX</div>
+          <div class="rating">Rating: 4.8</div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot icon"></i>Jio World, BKC
+          </div>
+          <button class="button" onclick="openInNewTab('https://example.com')">
+            Book Now
+          </button>
+        </div>
       </div>
-
+      <!--Card2-->
+      <div class="card">
+        <img
+          src="https://antdisplay.com/pub/media/magefan_blog/1_2__14.jpg"
+          alt="Salon Image"
+        />
+        <div class="card-content">
+          <div class="shop-name">BlackHair</div>
+          <div class="rating">Rating: 4.2</div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot icon"></i>Xavier Col., Marines
+            Lines
+          </div>
+          <button class="button" onclick="openInNewTab('https://example.com')">
+            Book Now
+          </button>
+        </div>
+      </div>
+      <!--Card2-->
+      <div class="card">
+        <img
+          src="https://telugustop.com/wp-content/uploads/2021/02/Saloon-shops-closed-against-corporate-saloon-shops.jpg"
+          alt="Salon Image"
+        />
+        <div class="card-content">
+          <div class="shop-name">la Scioors</div>
+          <div class="rating">Rating: 4.4</div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot icon"></i>Hill Road, Mahim
+          </div>
+          <button class="button" onclick="openInNewTab('https://example.com')">
+            Book Now
+          </button>
+        </div>
+      </div>
     </div>
-  </footer>
 
+    <br />
+    <br />
 
+    <!-- 
+    - #FOOTER
+  -->
 
+    <footer
+      class="footer has-bg-image"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              Barber
+              <span class="span">Hair Salon</span>
+            </a>
 
+            <form action="" class="input-wrapper">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Enter Your Email"
+                required
+                class="email-field"
+              />
 
-  <!-- 
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe Now</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+          <div class="footer-link-box">
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Quick Links</p>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Our Services</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Meet Our Team</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Our Portfolio</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Need A Career?</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">News & Blog</a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Services</p>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Hair Cutting</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Shaving & Design</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Hair Colors</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Beauty & Spa</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link has-before">Body Massages</a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Recent News</p>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 70; --height: 75"
+                  >
+                    <img
+                      src="./assets/images/footer-blog-1.jpg"
+                      width="70"
+                      height="75"
+                      loading="lazy"
+                      alt="The beginners guide to Henna Brows in Brisbane"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title"
+                        >The beginners guide to Transform your Look.</a
+                      >
+                    </h3>
+
+                    <div class="card-date">
+                      <ion-icon
+                        name="calendar-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+
+                      <time datetime="2022-08-25">05 Feburary 2024</time>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 70; --height: 75"
+                  >
+                    <img
+                      src="./assets/images/footer-blog-2.jpg"
+                      width="70"
+                      height="75"
+                      loading="lazy"
+                      alt="How do I get rid of unwanted hair on my face?"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title"
+                        >How do I get rid of unwanted hair on my face?</a
+                      >
+                    </h3>
+
+                    <div class="card-date">
+                      <ion-icon
+                        name="calendar-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+
+                      <time datetime="2024-02-05">05 Feburary 2024</time>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Contact Us</p>
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <address class="contact-link">
+                  Teachers Colony.Khar Road,Mumbai
+                </address>
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                <a href="tel:+0123456789" class="contact-link"
+                  >+91 7715820600</a
+                >
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <a href="mailto:support@gmail.com" class="contact-link"
+                  >rakeshgupta1361411@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 <a href="#" class="copyright-link">Rak-Code</a>. All
+            Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-
-
-
-
-  <script>
-    // You can add JavaScript code here for any dynamic behavior if needed
-    function openInNewTab(url) {
-        window.open(url, '_blank');
-    }
-  </script>
-
-</body>
-
+    <script>
+      // You can add JavaScript code here for any dynamic behavior if needed
+      function openInNewTab(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
 </html>
